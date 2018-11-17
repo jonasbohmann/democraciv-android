@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/drawer_home" />
+
+        <item
+            android:id="@+id/nav_bguide"
+            android:title="@string/drawer_bguide" />
+
+        <item
+            android:id="@+id/nav_wiki"
+            android:title="@string/drawer_wiki" />
+
+
+    </group>
+
+    <item android:title="@string/drawer_socialmedia">
+        <menu>
+        <item
+            android:id="@+id/nav_reddit"
+            android:title="@string/drawer_reddit" />
+        <item
+            android:id="@+id/nav_discord"
+            android:title="@string/drawer_discord" />
+        <item
+            android:id="@+id/nav_twitch"
+            android:title="@string/drawer_twitch" />
+        </menu>
+    </item>
+
+    <item android:title="@string/drawer_government">
+        <menu>
+
+            <item
+                android:id="@+id/nav_const"
+                android:title="@string/drawer_const"/>
+
+            <item
+                android:id="@+id/nav_parties"
+                android:title="@string/drawer_list_of_parties"/>
+
+            <item
+                android:id="@+id/nav_laws"
+                android:title="@string/drawer_laws" />
+
+            <item
+                android:id="@+id/nav_schedule"
+                android:title="@string/drawer_schedule" />
+        </menu>
+    </item>
+
+</menu>

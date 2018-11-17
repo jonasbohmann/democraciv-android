@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+<PreferenceCategory android:title="Notifications">
+
+    <Preference
+        android:title="Notifications"
+        android:summary="Enable or disable notifications from this app."
+        android:key="pref_launch_settings">
+    </Preference>
+
+
+</PreferenceCategory>
+
+
+
+<PreferenceCategory android:title="About">
+
+    <Preference
+        android:title="Author"
+        android:summary="DerJonas (u/Jovanos on Reddit)" />
+    <Preference
+        android:title="Version"
+        android:summary="@string/version" />
+    <Preference
+        android:key="feedback"
+        android:summary="Give me your opinion on the app!"
+        android:title="Send Feedback">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="mailto:jonasbapps@gmail.com" />
+    </Preference>
+
+    <Preference
+        android:title="GDPR Consent"
+        android:summary="Control your data." >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:targetPackage="com.democraciv.derjonas.democraciv"
+        android:targetClass="com.democraciv.derjonas.democraciv.IntroActivity"/>
+    </Preference>
+
+</PreferenceCategory>
+
+    <PreferenceCategory android:title="Credit">
+
+        <Preference
+            android:title="Intro Illustrations"
+            android:summary="All Intro Illustrations are created by Iconicbestiary - Freepik.com" />
+
+        <Preference
+            android:title="AppIntro"
+            android:summary="AppIntro by apl-devs is used under the Apache 2.0 license." >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/apl-devs/AppIntro/blob/master/LICENSE" />
+        </Preference>
+
+        <Preference
+            android:title="Google"
+            android:summary="Portions of this app are modifications based on or reproduced from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License."
+            />
+
+
+    </PreferenceCategory>
+</PreferenceScreen>
